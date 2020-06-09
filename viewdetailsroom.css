@@ -1,4 +1,10 @@
 @media (max-width: 575.98px) {
+    .hamb-icon_room-details{
+        display: block !important;
+        width: 25px !important;
+        height: 50% !important;
+        margin-left: auto !important;
+    }
     .nav-items_room-details{
         display: none !important;
     }
@@ -65,8 +71,25 @@
         flex-direction: row !important;
         justify-content: center !important;
     }
+    .body_view-details{
+        flex-direction: column !important;
+    }
+    .reviews{
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin-top: 50px !important;
+    }
+    .back-reviews{
+        display: none !important;
+    }
 }
 @media (min-width: 768px ){
+    .hamb-icon_room-details{
+        display: block !important;
+        width: 25px !important;
+        height: 50% !important;
+        margin-left: auto !important;
+    }
     .room-details{
         width: 100% !important;
     }
@@ -86,6 +109,17 @@
         flex-direction: row !important;
         justify-content: center !important;
     }
+    .body_view-details{
+        flex-direction: column !important;
+    }
+    .reviews{
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin-top: 50px !important;
+    }
+    .back-reviews{
+        display: none !important;
+    }
 }
 @media (min-width: 1024px ) {
     .nav-items_room-details{
@@ -97,18 +131,22 @@
     .bed_room-details{
         margin: 0px !important;
     }
-    
+    .hamb-icon_room-details{
+        display: none !important;
+    }
+    .body_view-details{
+        flex-direction: row !important;
+    }
+    .reviews{
+        width: 40% !important;
+        margin-left: 10% !important;
+        margin-top: 0px !important;
+    }
+    .back-reviews{
+        display: block !important;
+    }
 }
 @media (min-width: 1440px ) {
-    /* .nav-items_room-details{
-        display: flex !important;
-    }
-    .room-details{
-        width: 50% !important;
-    }
-    .bed_room-details{
-        margin: 0px !important;
-    } */
     .buttons_room-details{
         display: flex !important;
         flex-direction: row !important;
@@ -123,8 +161,15 @@
     .title_room-details{
         margin-bottom: 20px !important;
     }
+    .hamb-icon_room-details{
+        display: none !important;
+    }
+    /* .body_view-details{
+        display: flex !important;
+        flex-direction: row !important;
+    } */
 }
-.body_view-datails{
+.body_view-details{
     display: flex;
     flex-direction: row;
 }
@@ -136,12 +181,10 @@
 .room-details{
     width: 60%;
 }
-.reviews{
-    width: 40%;
-}
 .view-details{
     padding: 50px 160px;
     background: rgb(241, 241, 241);
+    /* height: 200vh; */
 }
 .nav-items_room-details{
     margin-left: auto;
@@ -166,6 +209,10 @@
     font-size: 16px;
     line-height: 21px;
     color: #F13054;
+}
+.star_room-details{
+    color: #FF7B01;
+    font-size: 25px;
 }
 .nav-item-btn_room-details{
     margin: 0px 0px 0px 30px;
@@ -197,21 +244,17 @@ p{
     font-size: 23px;
     line-height: 30px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 .main-img_room-details{
     max-width: auto;
-    height: 100%;
+    height: auto !important;
     padding: 10px;
     background: white;
-}
-.star-icon{
-    color: #FF7B01;
 }
 .ratings-number_room-details{
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: normal;
+    font-weight: bolder;
     font-size: 17px;
     line-height: 22px;
     color: rgba(25, 30, 81, 0.7);
@@ -298,4 +341,60 @@ p{
     box-sizing: border-box;
     border-radius: 5px;
     margin-left: 50px;
+}
+.reviews{
+    width: 40%;
+    margin-left: 10%;
+}
+.back-reviews{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    color: #F13054;
+    text-align: right;
+}
+.description-reviews{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(25, 30, 81, 0.88);
+}
+.date-reviews{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(25, 30, 81, 0.7);
+}
+.profile-reviews{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.name-reviews{
+    margin-left: 20px;
+}
+.comment-reviews{
+    margin-top: 20px;
+}
+.lorem-reviews{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: justify;
+    color: rgba(25, 30, 81, 0.7);
+}
+.feedbacks-reviews{
+    background: #FFFFFF;
+    border: 1px solid #D8D8DF;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 14px rgba(65, 82, 118, 0.04);
+    border-radius: 6px;
+    padding: 30px;
+    margin-top: 20px;
+}
+.title-reviews{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #191E51;
 }
